@@ -40,6 +40,51 @@ Stalabard is a marketplace for the Elurc DAO ecosystem where:
 
 ---
 
+## Roadmap
+
+### Phase 1 — Foundation (Current)
+
+- Set up Medusa v2 project baseline and module registration.
+- Create custom modules: `membership`, `marketplace`, `paymentMeta`, `audit`.
+- Define and run initial migrations.
+
+### Phase 2 — Core Marketplace Flows
+
+- Implement membership verification and members-only access guards.
+- Deliver seller listing draft/update/publish flows with ownership boundaries.
+- Expose buyer listing discovery and order attribution.
+
+### Phase 3 — Payments and Governance
+
+- Integrate ELURC-only checkout policy.
+- Implement Phantom-first non-custodial payment flow.
+- Add payment verification + deterministic status polling.
+- Deliver issue reporting + DAO moderation queue/actions.
+
+### Phase 4 — Hardening and Release
+
+- Add structured logging and governance/payment audit events.
+- Complete E2E and regression suites for release gates.
+- Stabilize for first production deployment.
+
+---
+
+## Tech Used
+
+| Layer | Technology |
+|---|---|
+| Commerce Backend | Medusa v2 (TypeScript, module/workflow/route architecture) |
+| Runtime | Node.js |
+| Database | PostgreSQL |
+| Cache/Coordination | Redis (recommended for idempotency/workflow support) |
+| Storefront | Next.js |
+| Wallet | Phantom (MVP-first) |
+| Payments | ELURC token, non-custodial verification flow |
+| Validation | Zod (request schemas) |
+| Observability | Structured logs + domain audit events |
+
+---
+
 ## Planning Artifacts
 
 Core planning documents live in `./_bmad-output/planning-artifacts`:
