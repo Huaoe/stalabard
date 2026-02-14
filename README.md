@@ -1,4 +1,4 @@
-# Stalabard
+# 🛡️ Stalabard
 
 <p align="center">
   <b>Members-only DAO marketplace powered by Medusa v2</b><br/>
@@ -14,7 +14,17 @@
 
 ---
 
-## Why Stalabard
+## 📋 TL;DR
+
+**What:** Members-only marketplace for Elurc DAO where verified NFT badge holders can buy and sell.  
+**Why:** Enforce community boundaries, ownership-scoped seller operations, and ELURC-only non-custodial checkout.  
+**How:** Medusa v2 backend with custom modules for membership, listings, payments, and DAO moderation.  
+**Timeline:** ~10–14 weeks (6 sprints) for MVP release.  
+**Status:** Planning complete → implementation starting.
+
+---
+
+## 🎯 Why Stalabard
 
 Stalabard is a marketplace for the Elurc DAO ecosystem where:
 
@@ -27,7 +37,7 @@ Stalabard is a marketplace for the Elurc DAO ecosystem where:
 
 ---
 
-## Product Pillars
+## 🏛️ Product Pillars
 
 | Pillar | MVP Intent |
 |---|---|
@@ -40,28 +50,42 @@ Stalabard is a marketplace for the Elurc DAO ecosystem where:
 
 ---
 
-## Roadmap
+## 🗓️ Roadmap
 
-### Phase 1 — Foundation (Current)
+```mermaid
+gantt
+    title Stalabard MVP Delivery Timeline
+    dateFormat YYYY-MM-DD
+    section Phase 1
+    Foundation & Modules           :p1, 2026-02-17, 14d
+    section Phase 2
+    Core Marketplace Flows         :p2, after p1, 21d
+    section Phase 3
+    Payments & Governance          :p3, after p2, 21d
+    section Phase 4
+    Hardening & Release            :p4, after p3, 14d
+```
+
+### 🚀 Phase 1 — Foundation (Current)
 
 - Set up Medusa v2 project baseline and module registration.
 - Create custom modules: `membership`, `marketplace`, `paymentMeta`, `audit`.
 - Define and run initial migrations.
 
-### Phase 2 — Core Marketplace Flows
+### 🛒 Phase 2 — Core Marketplace Flows
 
 - Implement membership verification and members-only access guards.
 - Deliver seller listing draft/update/publish flows with ownership boundaries.
 - Expose buyer listing discovery and order attribution.
 
-### Phase 3 — Payments and Governance
+### 💳 Phase 3 — Payments and Governance
 
 - Integrate ELURC-only checkout policy.
 - Implement Phantom-first non-custodial payment flow.
 - Add payment verification + deterministic status polling.
 - Deliver issue reporting + DAO moderation queue/actions.
 
-### Phase 4 — Hardening and Release
+### ✅ Phase 4 — Hardening and Release
 
 - Add structured logging and governance/payment audit events.
 - Complete E2E and regression suites for release gates.
@@ -69,7 +93,7 @@ Stalabard is a marketplace for the Elurc DAO ecosystem where:
 
 ---
 
-## Tech Used
+## 🛠️ Tech Used
 
 | Layer | Technology |
 |---|---|
@@ -85,7 +109,7 @@ Stalabard is a marketplace for the Elurc DAO ecosystem where:
 
 ---
 
-## Planning Artifacts
+## 📚 Planning Artifacts
 
 Core planning documents live in `./_bmad-output/planning-artifacts`:
 
@@ -97,7 +121,7 @@ Core planning documents live in `./_bmad-output/planning-artifacts`:
 
 ---
 
-## Delivery Snapshot
+## 📊 Delivery Snapshot
 
 - Planned epics: **5**
 - Planned stories: **23**
@@ -115,7 +139,7 @@ Sprint 6: Stabilization, E2E, Release Gates
 
 ---
 
-## Target Architecture (MVP)
+## 🏗️ Target Architecture (MVP)
 
 - **Backend:** Medusa v2 (Modules -> Workflows -> API routes)
 - **Custom Modules:** `membership`, `marketplace`, `paymentMeta`, `audit`
@@ -125,12 +149,12 @@ Sprint 6: Stabilization, E2E, Release Gates
 
 ---
 
-## Repository Status
+## 📦 Repository Status
 
 This repository is currently in planning-to-implementation transition.
 The first commit baseline includes project vision, architecture, and implementation-ready stories.
 
-### Immediate Next Steps
+### 🎬 Immediate Next Steps
 
 1. Scaffold Medusa backend and register custom modules.
 2. Generate migrations for membership/marketplace/paymentMeta/audit entities.
@@ -140,6 +164,6 @@ The first commit baseline includes project vision, architecture, and implementat
 
 ---
 
-## License
+## 📄 License
 
 TBD
