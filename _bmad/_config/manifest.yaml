@@ -1,0 +1,29 @@
+installation:
+  version: 6.0.0-Beta.8
+  installDate: 2026-02-14T10:44:28.503Z
+  lastUpdated: 2026-02-14T10:44:28.503Z
+modules:
+  - name: core
+    version: 6.0.0-Beta.8
+    installDate: 2026-02-14T10:44:27.139Z
+    lastUpdated: 2026-02-14T10:44:27.139Z
+    source: built-in
+    npmPackage: null
+    repoUrl: null
+  - name: bmm
+    version: 6.0.0-Beta.8
+    installDate: 2026-02-14T10:44:23.624Z
+    lastUpdated: 2026-02-14T10:44:27.139Z
+    source: built-in
+    npmPackage: null
+    repoUrl: null
+  - name: cis
+    version: 0.1.6
+    installDate: 2026-02-14T10:44:27.038Z
+    lastUpdated: 2026-02-14T10:44:28.503Z
+    source: external
+    npmPackage: bmad-creative-intelligence-suite
+    repoUrl: https://github.com/bmad-code-org/bmad-module-creative-intelligence-suite
+ides:
+  - windsurf
+  - opencode
